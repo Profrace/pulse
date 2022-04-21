@@ -1,0 +1,77 @@
+.carousel{
+    padding: 81px 0px;
+    &__inner{
+        width: 750px;
+        margin: 0 auto;
+        .slick-dots{
+            list-style-type: none;
+            margin-top: 10px;
+            text-align: center;
+            padding-left: 0;
+            li{
+                display: inline-block;
+                margin: 20px;
+                button{
+                    background-color: $main-color;
+                    border: none;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .slick-prev, .slick-next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        img{
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .slick-next{
+        right: -66px;
+        left: auto;
+    }
+    .tns-item{
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+@media (max-width: 1200px){
+}
+@media (max-width: 991px){
+    .carousel{
+        padding: 50px 0px 50px 0px;
+    }
+}
+@media (max-width: 767px){
+    .carousel{
+        &__inner{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .slick-dots{
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 575px){
+    .carousel{
+        padding: 20px 0px 20px 0px;
+    }
+}
